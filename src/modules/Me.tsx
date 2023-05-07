@@ -18,7 +18,7 @@ const Me = () => {
         ></Image>
       </div>
 
-      <div className="flex flex-2 justify-end items-start flex-col gap-12">
+      <div className="flex flex-2 mobile:flex-1 justify-end items-start flex-col gap-12">
         <span className="font-bold text-xl">Hellooooo codo sapiens</span>
         <span className="font-normal text-base w-full">
           I am a <strong>frontend software engineer</strong> and a{" "}
@@ -31,15 +31,15 @@ const Me = () => {
         </span>
         <div className="flex gap-12 text-black">
           <IconLink
-            icon={<LinkIcon className="text-black font-medium h-4 w-4" />}
+            icon={<LinkIcon className=" font-medium h-4 w-4" />}
             text={"Linkedln"}
           />
           <IconLink
-            icon={<CodeIcon className="text-black font-medium h-4 w-4" />}
+            icon={<CodeIcon className=" font-medium h-4 w-4" />}
             text={"Github"}
           />
           <IconLink
-            icon={<PhotoIcon className="text-black font-medium h-4 w-4" />}
+            icon={<PhotoIcon className=" font-medium h-4 w-4" />}
             text={"Instagram"}
           />
         </div>

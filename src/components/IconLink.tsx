@@ -7,9 +7,9 @@ interface IIconLink {
 
 const IconLink: FC<IIconLink> = ({ text, icon }) => {
   return (
-    <div className="flex gap-3 items-center">
+    <div className="flex gap-3 items-center cursor-pointer text-gray-700 hover:text-fontTextDark">
       {icon}
-      <span>{text}</span>
+      <span >{text}</span>
     </div>
   );
 };

@@ -7,7 +7,7 @@ interface IBaseLayout {
 
 const BaseLayout: FC<IBaseLayout> = ({ children }) => {
   return (
-    <div className="container mx-auto px-10 pb-10">
+    <div className="container mx-auto px-10 pb-10 mobile:p-0">
       <Header />
       {children}
     </div>
