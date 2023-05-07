@@ -1,5 +1,8 @@
 import Image from "next/image";
 import CodeIcon from "@heroicons/react/24/solid/CodeBracketIcon";
+import LinkIcon from "@heroicons/react/24/solid/LinkIcon";
+import PhotoIcon from "@heroicons/react/24/solid/PhotoIcon";
+import IconLink from "@/components/IconLink";
 const Me = () => {
   return (
     <div className="flex justify-center mobile:flex-col items-end gap-16 mt-20 mobile:mt-10">
@@ -22,16 +25,23 @@ const Me = () => {
           <strong>ui designer</strong> having a experience of 7.7 years. I am
           currently working for the company{" "}
           <strong>ionixx technologies </strong>
-          in bangalore.I am well versed in typescript and react and also I have worked
-          with <strong>angular</strong> for 5 years in different companies.
+          in bangalore.I am well versed in typescript and react and also I have
+          worked with <strong>angular</strong> for 5 years in different
+          companies.
         </span>
         <div className="flex gap-12 text-black">
-          <span>Linkedln</span>
-          <span className="flex flex-row gap-3 items-center">
-            <CodeIcon className="text-black font-medium h-4 w-4" />
-            Github
-          </span>
-          <span>Instagram</span>
+          <IconLink
+            icon={<LinkIcon className="text-black font-medium h-4 w-4" />}
+            text={"Linkedln"}
+          />
+          <IconLink
+            icon={<CodeIcon className="text-black font-medium h-4 w-4" />}
+            text={"Github"}
+          />
+          <IconLink
+            icon={<PhotoIcon className="text-black font-medium h-4 w-4" />}
+            text={"Instagram"}
+          />
         </div>
       </div>
     </div>
