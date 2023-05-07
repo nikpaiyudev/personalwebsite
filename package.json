@@ -6,9 +6,13 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   },
   "dependencies": {
+    "@heroicons/react": "^2.0.17",
+    "@material-tailwind/react": "^2.0.0",
     "@next/font": "13.4.1",
     "@types/node": "20.1.0",
     "@types/react": "18.2.6",
@@ -19,5 +23,19 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "typescript": "5.0.4"
+  },
+  "devDependencies": {
+    "@storybook/addon-essentials": "^7.0.9",
+    "@storybook/addon-interactions": "^7.0.9",
+    "@storybook/addon-links": "^7.0.9",
+    "@storybook/blocks": "^7.0.9",
+    "@storybook/nextjs": "^7.0.9",
+    "@storybook/react": "^7.0.9",
+    "@storybook/testing-library": "^0.0.14-next.2",
+    "autoprefixer": "^10.4.14",
+    "eslint-plugin-storybook": "^0.6.12",
+    "postcss": "^8.4.23",
+    "storybook": "^7.0.9",
+    "tailwindcss": "^3.3.2"
   }
 }
