@@ -11,7 +11,23 @@ module.exports = withMT({
     "./src/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        headerBorderColor: "#cccccc",
+        fontTextDark: "#222222",
+        bgDark: "#222222",
+      },
+      flex: {
+        2: "2 2 0%",
+      },
+      screens: {
+        mobile: { min: "320px", max: "480px" },
+        tablet: { min: "481px", max: "768px" },
+        laptop: { min: "769px", max: "1024px" },
+        desktop: { min: "1025px", max: "1440px" },
+        wide: { min: "1440px" },
+      },
+    },
   },
   plugins: [],
 });
