@@ -18,7 +18,7 @@ const Me = () => {
         ></Image>
       </div>
 
-      <div className="flex flex-2 mobile:flex-1 justify-end items-start flex-col gap-12">
+      <div className="flex flex-2 mobile:flex-1 text-black dark:text-white justify-end items-start flex-col gap-12">
         <span className="font-bold text-xl">Hellooooo codo sapiens</span>
         <span className="font-normal text-base w-full">
           I am a <strong>frontend software engineer</strong> and a{" "}

@@ -10,12 +10,14 @@ module.exports = withMT({
     // Or if using `src` directory:
     "./src/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+  darkMode: "class",
   theme: {
     extend: {
       colors: {
         headerBorderColor: "#cccccc",
         fontTextDark: "#222222",
         bgDark: "#222222",
+        headerBgDark: "#444444",
       },
       flex: {
         2: "2 2 0%",
