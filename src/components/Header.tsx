@@ -3,10 +3,13 @@ import SunIcon from "@heroicons/react/24/solid/SunIcon";
 import MoonIcon from "@heroicons/react/24/solid/MoonIcon";
 import { useTheme } from "next-themes";
 import RenderIf from "./RenderIf";
-import ArrowDownTrayIcon from "@heroicons/react/24/solid/ArrowDownTrayIcon";
-import { ConnectButton } from "@rainbow-me/rainbowkit";
+import { ConnectButton, useConnectModal } from "@rainbow-me/rainbowkit";
+import { useAccount } from "wagmi";
+
 const Header = () => {
   const { theme, setTheme } = useTheme();
+  const { openConnectModal } = useConnectModal();
+  const { address, isConnecting, isConnected } = useAccount();
 
   const HeaderLink = ({ text }: { text: string }) => {
     return (
@@ -50,20 +53,16 @@ const Header = () => {
           </RenderIf>
         </div>
       </div>
-      <PrimaryButton
-        className="h-14 w-[15%] mobile:hidden animate-none hover:bg-bgDark hover:text-white bg-white dark:bg-headerBgDark dark:text-white dark:border-0  text-fontTextDark hover:border-1 hover:border-black  shadow-none border border-headerBorderColor hover:shadow-none"
-        onClick={() => {}}
-      >
-        <span className="whitespace-nowrap">Connect Wallet</span>
-      </PrimaryButton>
+      <div className="w-[15%]">
+        <ConnectButton />
+      </div>
+
       <PrimaryButton
         className="h-14 w-[15%]  mobile:hidden flex justify-center gap-3 items-center  animate-none  bg-[#FB2576] text-white     shadow-none  hover:shadow-none"
         onClick={() => {}}
       >
         <span className="whitespace-nowrap">Download Resume</span>
       </PrimaryButton>
-
-      {/* <ConnectButton /> */}
     </div>
   );
 };

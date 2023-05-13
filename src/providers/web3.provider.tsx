@@ -1,6 +1,7 @@
 import { FC, useState } from "react";
 import "@rainbow-me/rainbowkit/styles.css";
 import {
+  darkTheme,
   getDefaultWallets,
   lightTheme,
   RainbowKitProvider,
@@ -17,7 +18,7 @@ interface IModalProvider {
 }
 
 const Web3ModalProvider: FC<IModalProvider> = ({ children }) => {
-  const [currentTheme, setCurrentTheme] = useState(lightTheme());
+  const [currentTheme, setCurrentTheme] = useState(darkTheme());
   const { chains } = configureChains(
     [mainnet],
     [
