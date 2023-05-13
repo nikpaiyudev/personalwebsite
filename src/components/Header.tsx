@@ -18,7 +18,7 @@ const Header = () => {
     <div className="flex items-center mt-6 gap-4 text-black dark:text-white">
       <div className="h-14 w-full px-6 border justify-between bg-white dark:bg-headerBgDark dark:border-0 border-headerBorderColor rounded-lg flex items-center">
         <div className="flex flex-row gap-8">
-          <span className="font-bold text-base border-r-[1px] border-black pr-8">
+          <span className="font-bold text-base border-r-[1px] border-black dark:border-white pr-8">
             .NikhilRadhakrishnan.
           </span>
           <div className="flex mobile:hidden">
@@ -49,7 +49,7 @@ const Header = () => {
         </div>
       </div>
       <PrimaryButton
-        className="h-14 w-52 mobile:hidden hover:bg-bgDark hover:text-white bg-white dark:bg-headerBgDark dark:text-white dark:border-0  text-fontTextDark hover:border-1 hover:border-black  shadow-none border border-headerBorderColor hover:shadow-none"
+        className="h-14 w-52 mobile:hidden animate-none hover:bg-bgDark hover:text-white bg-white dark:bg-headerBgDark dark:text-white dark:border-0  text-fontTextDark hover:border-1 hover:border-black  shadow-none border border-headerBorderColor hover:shadow-none"
         onClick={() => {}}
       >
         <span>Connect Wallet</span>

@@ -3,6 +3,7 @@ import CodeIcon from "@heroicons/react/24/solid/CodeBracketIcon";
 import LinkIcon from "@heroicons/react/24/solid/LinkIcon";
 import PhotoIcon from "@heroicons/react/24/solid/PhotoIcon";
 import IconLink from "@/components/IconLink";
+
 const Me = () => {
   return (
     <div className="flex justify-center mobile:flex-col items-end gap-16 mt-20 mobile:mt-10">
@@ -11,9 +12,12 @@ const Me = () => {
           src={
             "https://i.pinimg.com/originals/3e/2e/8c/3e2e8c6fa626636eb4e8bdfe78edab3b.jpg"
           }
-          width={510}
-          height={610}
-          className="w-full rounded-2xl"
+          blurDataURL={
+            "https://i.pinimg.com/originals/3e/2e/8c/3e2e8c6fa626636eb4e8bdfe78edab3b.jpg"
+          }
+          width={500}
+          height={510}
+          className="h-[600px] rounded-2xl"
           alt={""}
         ></Image>
       </div>
