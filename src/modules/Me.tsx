@@ -52,7 +52,7 @@ const Me = () => {
           <IconLink
             icon={<PhotoIcon className=" font-medium h-4 w-4" />}
             text={"Instagram"}
-            link={"http://stackoverflow.com"}
+            link={"https://instagram.com/paiyu_hai_naam?igshid=MzRlODBiNWFlZA=="}
           />
         </div>
       </div>

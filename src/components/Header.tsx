@@ -30,7 +30,6 @@ const Header = () => {
             <ul className="flex flex-row gap-8 box-border">
               <HeaderLink text="Home" />
               <HeaderLink text="Work" />
-              <HeaderLink text="Experience" />
             </ul>
           </div>
         </div>
