@@ -5,7 +5,7 @@ import PhotoIcon from "@heroicons/react/24/solid/PhotoIcon";
 import IconLink from "@/components/IconLink";
 import { useEffect } from "react";
 import { useTheme } from "next-themes";
-import AvatarImage from "public/avatar.jpg";
+import AvatarImage from "public/image.jpg";
 
 const Me = () => {
   const { theme, setTheme } = useTheme();
@@ -22,7 +22,7 @@ const Me = () => {
           blurDataURL={AvatarImage.blurDataURL}
           objectFit={"cover"}
           layout={"fill"}
-          className="rounded-2xl bg-bottom"
+          className="rounded-2xl bg-bottom dark:!border dark:!border-white dark:!border-solid"
           alt={""}
         ></Image>
       </div>
@@ -42,14 +42,17 @@ const Me = () => {
           <IconLink
             icon={<LinkIcon className=" font-medium h-4 w-4" />}
             text={"Linkedln"}
+            link={"http://stackoverflow.com"}
           />
           <IconLink
             icon={<CodeIcon className=" font-medium h-4 w-4" />}
             text={"Github"}
+            link={"http://stackoverflow.com"}
           />
           <IconLink
             icon={<PhotoIcon className=" font-medium h-4 w-4" />}
             text={"Instagram"}
+            link={"http://stackoverflow.com"}
           />
         </div>
       </div>

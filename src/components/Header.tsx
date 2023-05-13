@@ -6,6 +6,7 @@ import RenderIf from "./RenderIf";
 import ArrowDownTrayIcon from "@heroicons/react/24/solid/ArrowDownTrayIcon";
 const Header = () => {
   const { theme, setTheme } = useTheme();
+  
   const HeaderLink = ({ text }: { text: string }) => {
     return (
       <li className="box-content">
