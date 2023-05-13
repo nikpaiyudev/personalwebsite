@@ -49,16 +49,16 @@ const Header = () => {
         </div>
       </div>
       <PrimaryButton
-        className="h-14 w-[15%] mobile:hidden animate-none hover:bg-bgDark hover:text-white bg-white dark:bg-headerBgDark dark:text-white dark:border-0  text-fontTextDark hover:border-1 hover:border-black  shadow-none border border-headerBorderColor hover:shadow-none"
-        onClick={() => {}}
-      >
-        <span className="whitespace-nowrap">Connect Wallet</span>
-      </PrimaryButton>
-      <PrimaryButton
         className="h-14 w-[15%]  mobile:hidden flex justify-center gap-3 items-center  animate-none hover:bg-bgDark hover:text-white bg-white dark:bg-headerBgDark dark:text-white dark:border-0  text-fontTextDark hover:border-1 hover:border-black  shadow-none border border-headerBorderColor hover:shadow-none"
         onClick={() => {}}
       >
         <span className="whitespace-nowrap">Download Resume</span>
+      </PrimaryButton>
+      <PrimaryButton
+        className="h-14 w-[15%] mobile:hidden animate-none hover:bg-bgDark hover:text-white bg-white dark:bg-headerBgDark dark:text-white dark:border-0  text-fontTextDark hover:border-1 hover:border-black  shadow-none border border-headerBorderColor hover:shadow-none"
+        onClick={() => {}}
+      >
+        <span className="whitespace-nowrap">Connect Wallet</span>
       </PrimaryButton>
     </div>
   );
