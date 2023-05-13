@@ -42,12 +42,12 @@ const Me = () => {
           <IconLink
             icon={<LinkIcon className=" font-medium h-4 w-4" />}
             text={"Linkedln"}
-            link={"http://stackoverflow.com"}
+            link={"https://www.linkedin.com/in/nikhil-radhakrishnan-5b39b6a9"}
           />
           <IconLink
             icon={<CodeIcon className=" font-medium h-4 w-4" />}
             text={"Github"}
-            link={"http://stackoverflow.com"}
+            link={"https://github.com/nikpaiyudev"}
           />
           <IconLink
             icon={<PhotoIcon className=" font-medium h-4 w-4" />}
