@@ -1,10 +1,11 @@
-import Image from "next/image";
+import Image from "next/legacy/image";
 import CodeIcon from "@heroicons/react/24/solid/CodeBracketIcon";
 import LinkIcon from "@heroicons/react/24/solid/LinkIcon";
 import PhotoIcon from "@heroicons/react/24/solid/PhotoIcon";
 import IconLink from "@/components/IconLink";
 import { useEffect } from "react";
 import { useTheme } from "next-themes";
+import AvatarImage from "public/avatar.jpg";
 
 const Me = () => {
   const { theme, setTheme } = useTheme();
@@ -14,18 +15,14 @@ const Me = () => {
   }, []);
 
   return (
-    <div className="flex justify-center mobile:flex-col items-end gap-16 mt-20 mobile:mt-10">
-      <div className="flex-1 w-full">
+    <div className="flex h-full justify-end mobile:flex-col items-end gap-16 mt-20 mobile:mt-10">
+      <div className="flex-1 w-full relative mobile:min-h-0 tablet:min-h-[600px] laptop:min-h-[600px] desktop:min-h-[600px] wide:min-h-[600px]">
         <Image
-          src={
-            "https://i.pinimg.com/originals/3e/2e/8c/3e2e8c6fa626636eb4e8bdfe78edab3b.jpg"
-          }
-          blurDataURL={
-            "https://i.pinimg.com/originals/3e/2e/8c/3e2e8c6fa626636eb4e8bdfe78edab3b.jpg"
-          }
-          width={500}
-          height={510}
-          className="h-[600px] rounded-2xl"
+          src={AvatarImage.src}
+          blurDataURL={AvatarImage.blurDataURL}
+          objectFit={"cover"}
+          layout={"fill"}
+          className="rounded-2xl bg-bottom"
           alt={""}
         ></Image>
       </div>
