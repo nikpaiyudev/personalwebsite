@@ -3,14 +3,10 @@ import SunIcon from "@heroicons/react/24/solid/SunIcon";
 import MoonIcon from "@heroicons/react/24/solid/MoonIcon";
 import { useTheme } from "next-themes";
 import RenderIf from "./RenderIf";
-import { ConnectButton, useConnectModal } from "@rainbow-me/rainbowkit";
-import { useAccount } from "wagmi";
+import { ConnectButton } from "@rainbow-me/rainbowkit";
 
 const Header = () => {
   const { theme, setTheme } = useTheme();
-  const { openConnectModal } = useConnectModal();
-  const { address, isConnecting, isConnected } = useAccount();
-
   const HeaderLink = ({ text }: { text: string }) => {
     return (
       <li className="box-content">
@@ -52,16 +48,15 @@ const Header = () => {
           </RenderIf>
         </div>
       </div>
-      <div className="w-[15%]">
-        <ConnectButton />
-      </div>
-
       <PrimaryButton
         className="h-14 w-[15%]  mobile:hidden flex justify-center gap-3 items-center  animate-none  bg-[#FB2576] text-white     shadow-none  hover:shadow-none"
         onClick={() => {}}
       >
         <span className="whitespace-nowrap">Download Resume</span>
       </PrimaryButton>
+      <div className="w-[15%]">
+        <ConnectButton />
+      </div>
     </div>
   );
 };
