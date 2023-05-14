@@ -27,9 +27,9 @@ const Me = () => {
         ></Image>
       </div>
 
-      <div className="flex flex-2 mobile:flex-1 text-black dark:text-white justify-end items-start flex-col gap-12">
+      <div className="flex flex-2 mobile:flex-1 text-black dark:text-white justify-end items-start flex-col gap-12 mobile:mx-auto mobile:w-full">
         <span className="font-bold text-xl">Hellooooo codo sapiens</span>
-        <span className="font-normal text-base w-full">
+        <span className="font-normal text-base w-full leading-10">
           I am a <strong>frontend software engineer</strong> and a{" "}
           <strong>ui designer</strong> having a experience of 7.7 years. I am
           currently working for the company{" "}
@@ -52,7 +52,9 @@ const Me = () => {
           <IconLink
             icon={<PhotoIcon className=" font-medium h-4 w-4" />}
             text={"Instagram"}
-            link={"https://instagram.com/paiyu_hai_naam?igshid=MzRlODBiNWFlZA=="}
+            link={
+              "https://instagram.com/paiyu_hai_naam?igshid=MzRlODBiNWFlZA=="
+            }
           />
         </div>
       </div>
