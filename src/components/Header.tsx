@@ -55,7 +55,7 @@ const Header = () => {
         <span className="whitespace-nowrap">Download Resume</span>
       </PrimaryButton>
       <div className="w-[15%]">
-        <ConnectButton />
+        <ConnectButton label="Connect Wallet" />
       </div>
     </div>
   );

@@ -12,11 +12,7 @@ const nextConfig = {
   },
   images: {
     domains: [
-      "images.unsplash.com",
-      "unsplash.com",
-      "img.freepik.com",
-      "i.pinimg.com",
-      "readyplayer.me",
+      "images.ctfassets.net"
     ],
   },
 };
