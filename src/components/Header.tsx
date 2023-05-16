@@ -17,7 +17,7 @@ const Header = () => {
 
   return (
     <div className="flex items-center mt-10 gap-4 text-black dark:text-white">
-      <div className="h-14 w-[70%] px-6 border justify-between bg-white dark:bg-headerBgDark dark:border-0 border-headerBorderColor rounded-lg flex items-center">
+      <div className="h-14 w-[85%] px-6 border justify-between bg-white dark:bg-headerBgDark dark:border-0 border-headerBorderColor rounded-lg flex items-center">
         <div className="flex flex-row gap-8">
           <span className="font-bold text-base border-r-[1px] border-black dark:border-white pr-8">
             .NikhilRadhakrishnan.
@@ -54,9 +54,9 @@ const Header = () => {
       >
         <span className="whitespace-nowrap">Download Resume</span>
       </PrimaryButton>
-      <div className="w-[15%]">
+      {/* <div className="w-[15%] mobile:hidden tablet:hidden">
         <ConnectButton label="Connect Wallet" />
-      </div>
+      </div> */}
     </div>
   );
 };
