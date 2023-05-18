@@ -1,5 +1,5 @@
 import { Enteries } from "@/constants/entiries.constants";
-import Home, { IHome } from "@/modules/Home";
+import Home from "@/modules/Home";
 import ContentfulService from "@/services/contentful.service";
 
 const MePage = (props: any) => {
