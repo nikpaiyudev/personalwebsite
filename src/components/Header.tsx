@@ -3,7 +3,7 @@ import SunIcon from "@heroicons/react/24/solid/SunIcon";
 import MoonIcon from "@heroicons/react/24/solid/MoonIcon";
 import { useTheme } from "next-themes";
 import RenderIf from "./RenderIf";
-import { ConnectButton } from "@rainbow-me/rainbowkit";
+
 
 const Header = () => {
   const { theme, setTheme } = useTheme();
@@ -54,9 +54,6 @@ const Header = () => {
       >
         <span className="whitespace-nowrap">Download Resume</span>
       </PrimaryButton>
-      {/* <div className="w-[15%] mobile:hidden tablet:hidden">
-        <ConnectButton label="Connect Wallet" />
-      </div> */}
     </div>
   );
 };

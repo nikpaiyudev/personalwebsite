@@ -15,21 +15,4 @@ html {
   height: 100vh;
 }
 
-[data-testid="rk-connect-button"] {
-  color: #fff !important;
-  height: 3.5rem !important;
-  background-color: #301E67 !important;
-  font-size: 0.8rem !important;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-transform: uppercase;
-}
-
-[data-testid="rk-account-button"] {
-  font-size: 0.7rem !important;
-  height: 3.5rem !important;
-  width: 100%;
-}
 
