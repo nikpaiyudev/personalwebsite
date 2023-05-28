@@ -17,7 +17,8 @@ module.exports = withMT({
         headerBorderColor: "#cccccc",
         fontTextDark: "#222222",
         bgDark: "#03001C",
-        headerBgDark: "#301E67",
+        headerBgDark: "#18122B",
+        resumeButtonColor: "#F05454",
       },
       flex: {
         2: "2 2 0%",

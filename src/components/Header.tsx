@@ -4,7 +4,6 @@ import MoonIcon from "@heroicons/react/24/solid/MoonIcon";
 import { useTheme } from "next-themes";
 import RenderIf from "./RenderIf";
 
-
 const Header = () => {
   const { theme, setTheme } = useTheme();
   const HeaderLink = ({ text }: { text: string }) => {
@@ -49,7 +48,7 @@ const Header = () => {
         </div>
       </div>
       <PrimaryButton
-        className="h-14 w-[15%]  mobile:hidden flex justify-center gap-3 items-center  animate-none  bg-[#FB2576] text-white     shadow-none  hover:shadow-none"
+        className="h-14 w-[15%]  mobile:hidden flex justify-center gap-3 items-center  animate-none  bg-resumeButtonColor text-white     shadow-none  hover:shadow-none"
         onClick={() => {}}
       >
         <span className="whitespace-nowrap">Download Resume</span>

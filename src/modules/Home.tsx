@@ -25,24 +25,13 @@ const Home: FC<IHomeProps> = ({ homePage }) => {
   }, []);
 
   return (
-    <div className="flex h-full justify-end mobile:flex-col items-end gap-16 mt-20 mobile:mt-10">
-      <div className="flex-1 w-full relative mobile:min-h-0 tablet:min-h-[600px] laptop:min-h-[600px] desktop:min-h-[600px] wide:min-h-[600px]">
-        <Image
-          src={`https:${homePage?.image?.fields?.file?.url}` as string}
-          blurDataURL={`https:${homePage?.image?.fields.file?.url}` as string}
-          objectFit={"cover"}
-          layout={"fill"}
-          className="rounded-2xl bg-bottom dark:!border dark:!border-white dark:!border-solid"
-          alt={""}
-        ></Image>
-      </div>
-
-      <div className="flex flex-2 mobile:flex-1 text-black dark:text-white justify-end items-start flex-col gap-12 mobile:mx-auto mobile:w-full">
-        <span className="font-bold text-xl">{homePage.title}</span>
-        <span className="font-normal text-base w-full leading-10">
+    <div className="flex h-full justify-end mobile:flex-col items-end gap-16 py-24 mobile:mt-10">
+      <div className="flex justify-center items-center w-full mobile:flex-1 text-black dark:text-white  flex-col gap-16 mobile:mx-auto mobile:w-full">
+        <span className="font-bold text-9xl text-center">{homePage.title}</span>
+        <span className="font-normal text-base w-[800px] text-center leading-10 ">
           {homePage.description}
         </span>
-        <div className="flex gap-12 text-black">
+        <div className="flex gap-12 w-full text-black items-center justify-center">
           {homePage.links.map((link, index) => {
             return (
               <IconLink
