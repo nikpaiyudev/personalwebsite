@@ -1,10 +1,8 @@
-import Image from "next/legacy/image";
-import LinkIcon from "@heroicons/react/24/solid/LinkIcon";
 import IconLink from "@/components/IconLink";
 import { FC, useEffect } from "react";
 import { useTheme } from "next-themes";
 import type Contentful from "contentful";
-
+import { motion } from "framer-motion";
 export interface IHomeProps {
   homePage: IHomeFields;
 }
@@ -31,7 +29,12 @@ const Home: FC<IHomeProps> = ({ homePage }) => {
   }, []);
 
   return (
-    <div className="flex h-full w-full justify-end mobile:flex-col items-end gap-16 py-24 mobile:mt-10">
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      className="flex h-full w-full justify-end mobile:flex-col items-end gap-16 py-24 mobile:mt-10"
+    >
       <div className="flex  w-full mobile:flex-1 text-black dark:text-white  flex-col gap-16 mobile:mx-auto mobile:w-full">
         <span className="font-normal text-9xl ">{homePage.title}</span>
         <span className="font-normal text-base w-[800px] mobile:w-full tablet:w-full leading-10 font-Inter">
@@ -55,7 +58,7 @@ const Home: FC<IHomeProps> = ({ homePage }) => {
           })}
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
