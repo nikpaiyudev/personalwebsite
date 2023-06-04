@@ -23,7 +23,6 @@ interface IContetnfulLink {
 
 const Home: FC<IHomeProps> = ({ homePage }) => {
   const { setTheme } = useTheme();
-  console.log(homePage);
   useEffect(() => {
     setTheme("dark");
   }, []);

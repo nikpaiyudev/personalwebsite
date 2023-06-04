@@ -1,4 +1,5 @@
 export const Enteries = {
     homePage : 'homepage',
-    header : 'header'
+    header : 'header',
+    projectsPage: 'projectsPage'
 }

@@ -19,6 +19,7 @@ module.exports = withMT({
         bgDark: "#03051E",
         headerBgDark: "#03051E",
         resumeButtonColor: "#F05454",
+        chipBg: "#E94560",
       },
       flex: {
         2: "2 2 0%",

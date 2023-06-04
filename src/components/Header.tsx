@@ -1,16 +1,29 @@
-import PrimaryButton from "./Buttons/PrimaryButton";
 import SunIcon from "@heroicons/react/24/solid/SunIcon";
 import MoonIcon from "@heroicons/react/24/solid/MoonIcon";
 import DownloadIcon from "@heroicons/react/24/solid/ArrowDownTrayIcon";
 import { useTheme } from "next-themes";
 import RenderIf from "./RenderIf";
+import { useRouter } from "next/router";
 
 const Header = () => {
   const { theme, setTheme } = useTheme();
+
   const HeaderLink = ({ text }: { text: string }) => {
+    const router = useRouter();
     return (
-      <li className="box-content">
-        <span className="cursor-pointer hover:font-medium">{text}</span>
+      <li
+        className="box-content"
+        onClick={() => router.push(`/${text.toLowerCase()}`)}
+      >
+        <span
+          className={`cursor-pointer  hover:font-bold ${
+            router.pathname === `/${text.toLowerCase()}`
+              ? "font-bold"
+              : "font-light"
+          }`}
+        >
+          {text}
+        </span>
       </li>
     );
   };
@@ -25,7 +38,7 @@ const Header = () => {
           <div className="flex mobile:hidden">
             <ul className="flex flex-row gap-8 box-border">
               <HeaderLink text="Home" />
-              <HeaderLink text="Work" />
+              <HeaderLink text="Projects" />
               <HeaderLink text="Timeline" />
             </ul>
           </div>
@@ -34,7 +47,9 @@ const Header = () => {
       <div className="flex items-center gap-10">
         <div className="flex items-center cursor-pointer gap-2">
           <DownloadIcon className="h-6 w-6 text-headerBgDark dark:text-white" />
-          <label className="hover:underline cursor-pointer">Download Resume</label>
+          <label className="hover:underline cursor-pointer">
+            Download Resume
+          </label>
         </div>
         <div className="flex text-black">
           <RenderIf isTrue={theme === "light"}>
