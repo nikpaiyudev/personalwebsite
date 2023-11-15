@@ -6,7 +6,7 @@ import {
   FiExternalLink as ExternalLinkIcon,
 } from "react-icons/fi";
 
-interface IProjectCard {
+export interface IProjectCard {
   projectName: string;
   projectInfo: string;
   technologies: string[];

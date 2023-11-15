@@ -1,5 +1,6 @@
 export const Enteries = {
-    homePage : 'homepage',
-    header : 'header',
-    projectsPage: 'projectsPage'
-}
+  homePage: "homepage",
+  header: "header",
+  projectsPage: "projectsPage",
+  timelinePage: "timelinePage",
+};
